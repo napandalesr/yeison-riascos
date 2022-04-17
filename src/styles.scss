@@ -4,3 +4,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #35353f;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  border: solid 1px #35353f;
+  background-color: #ffb500;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  width: 12px;
+}
