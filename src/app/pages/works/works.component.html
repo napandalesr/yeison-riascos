@@ -1,0 +1,37 @@
+  
+  <div class="gallery__container"
+     fxLayout="row wrap"
+     [ngStyle]="{
+       'height': '50rem'
+      }">
+  <div class="gallery__image"
+    *ngFor="let image of images"
+    [fxFlex]="image.grow + ' ' + image.shrink + ' ' + image.basis"
+    [ngStyle]="{
+      'background': '#fff url(' + image.src + ') no-repeat scroll center center',
+      'background-size': 'cover',
+      margin: '0.25rem'
+    }">
+    <div class="text">
+      <h4>{{image.title}}</h4>
+      <p>
+        {{image.text}}
+      </p>
+      <a (click)="showModal(image.title)">Ver más</a>
+    </div>
+  </div>
+</div>
+
+<nz-modal [(nzVisible)]="isVisible" (nzOnCancel)="handleCancel()" [nzFooter]=""
+[nzStyle]="{ width: '90%', height: '90%', top: '40px' }">
+  <ng-container *nzModalContent>
+    <nz-carousel [nzEffect]="effect">
+      <div nz-carousel-content *ngFor="let index of carousel" style="width: 50%;margin: auto; align-items: center; flex-direction: column; display: flex; position: relative;">
+        <div class="protect"></div>
+        <img src="{{ index.src }}" alt="Custodia" style="height: 320px;">
+      </div>
+    </nz-carousel>
+  </ng-container>
+  <div *nzModalFooter>
+  </div>
+</nz-modal>

@@ -1,0 +1,61 @@
+
+.gallery__image {
+  position: relative;
+  .text {
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    h4 {
+      color: white;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  &:hover {
+    .text {
+      padding-top: 10px;
+      opacity: 1;
+      height: 100%;
+    }
+  }
+}
+
+[nz-carousel-content] {
+  text-align: center;
+  color: #fff;
+}
+
+.ant-carousel {
+  height: 30rem;
+  padding: 10px;
+}
+
+.ant-modal-content {
+  height: 90% !important;
+}
+
+.ant-carousel {
+  .slick-slide {
+    img {
+      height: 100% !important;
+    }
+  }
+}
+
+.protect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: solid;
+  z-index: 20000;
+}
+

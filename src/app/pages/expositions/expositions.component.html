@@ -1,0 +1,48 @@
+<div class="signup photograph">
+  <div class="container">
+    <div class="slider-left">
+      <div class="container">
+        <nz-carousel [nzEffect]="effect">
+          <div nz-carousel-content *ngFor="let index of carousel1" style="width: 50%;margin: auto; height: 420px;">
+            <img src="{{ index.src }}" alt="Los Angeles" style="width:100%;">
+          </div>
+        </nz-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" signup photograph">
+  <div class="container">
+    <div class="slider-left">
+      <div class="container">
+        <nz-carousel [nzEffect]="effect">
+          <div nz-carousel-content *ngFor="let index of carousel2" style="width: 50%;margin: auto; height: 420px;">
+            <img src="{{ index.src }}" alt="Los Angeles" style="width:100%;">
+          </div>
+        </nz-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="signup photograph">
+  <div class="container">
+    <div class="slider-left">
+      <div class="container">
+        <nz-carousel [nzEffect]="effect">
+          <div nz-carousel-content *ngFor="let index of carousel3" style="width: 50%;margin: auto; height: 420px;">
+            <img src="{{ index.src }}" alt="Los Angeles" style="width:100%;">
+          </div>
+        </nz-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" signup photograph">
+  <div class="container">
+    <nz-carousel [nzEffect]="effect">
+      <div nz-carousel-content *ngFor="let index of carousel4" style="width: 50%;margin: auto; height: 420px;">
+        <img src="{{ index.src }}" alt="Los Angeles" style="width:100%;">
+      </div>
+    </nz-carousel>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="contact s5" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 contact_left" style="color: white;">
+        <h3>Enlaces</h3>
+        El arte de denunciar <a href="#">https://www.rtvcplay.co/series-documentales/los-visitantes/arte-para-denunciar</a>
+        <br/><br/><br/><br/><br/>
+        <h3>Redes sociales</h3><i class='fab fa-facebook'></i>
+        <ul class="contact_info">
+          <li><a href="https://web.facebook.com/yeisons.ri" target="_blank" style="color: white;"><fa-icon [icon]="faFacebookF"></fa-icon> Yeison Ri</a></li>
+          <li><a href="https://www.instagram.com/yeison_ri/?hl=es-la" target="_blank" style="color: white;"><fa-icon [icon]="faInstagram"></fa-icon> Yeison_ri</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="contact_right">
+          <div class="contact-form_grid">
+            <form method="post">
+              <nz-spin [nzSpinning]="isSpinning">
+                <input type="text" class="textbox" [(ngModel)]="name" placeholder="Nombre">
+                <input type="text" class="textbox" [(ngModel)]="from"  placeholder="Correo">
+                <input type="text" class="textbox" [(ngModel)]="subject" placeholder="Asunto">
+                <textarea [(ngModel)]="content" placeholder="Mensaje">Message</textarea>
+                <input type="submit" value="Enviar" (click)="sendEmail()">
+              </nz-spin>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

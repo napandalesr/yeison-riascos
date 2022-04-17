@@ -1,0 +1,20 @@
+.show_menu {
+  display: block;
+  background: #ffb500 !important;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .subMenu {
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.page-scroll:hover {
+  a {
+    color: #ffb500;
+    background: #35353f;
+  }
+}

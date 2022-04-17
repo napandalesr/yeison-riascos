@@ -1,0 +1,32 @@
+<nav class="subMenu navbar-custom navbar-scroll-top smint" role="navigation">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" (click)="showMenuResponsive()" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <img src="../../../assets/images/nav-icon.png" title="drop-down-menu"> 
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse navbar-left navbar-main-collapse collapse" [ngClass]="{'show_menu':menuResponsive}" style="height: 1px;">
+      <ul class="nav navbar-nav" [ngClass]="{'show_menu':menuResponsive}">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="page-scroll" [ngClass]="{'active':home}" >
+          <a id="sTop" class="subNavBtn active" routerLink="/" (click)="activeLink('home')">Inicio</a>
+        </li>
+        <li class="page-scroll" [ngClass]="{'active':about}" (click)="activeLink('about')">
+          <a id="s2" class="subNavBtn" routerLink="about">Sobre mi</a>
+        </li>
+        <li class="page-scroll" [ngClass]="{'active':works}">
+          <a id="s1" class="subNavBtn" routerLink="works" (click)="activeLink('works')">Obras</a>
+        </li>
+        <li class="page-scroll"  [ngClass]="{'active':exposition}">
+          <a id="s3" class="subNavBtn" routerLink="expositions" (click)="activeLink('exposition')">Exposiciones</a>
+        </li>
+        <li class="page-scroll"  [ngClass]="{'active':contact}">
+          <a id="s5" class="subNavBtn" routerLink="contact" (click)="activeLink('contact')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    <div class="clearfix"> </div>
+  </div>
+</nav>
