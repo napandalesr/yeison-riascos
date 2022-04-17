@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesComponent } from './pages/pages.component';
-import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -24,7 +23,6 @@ registerLocaleData(es);
   declarations: [
     AppComponent,
     PagesComponent,
-    LoginComponent,
     RegisterComponent,
     NotFoundComponent,
   ],

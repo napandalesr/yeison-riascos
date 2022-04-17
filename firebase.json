@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/yeison riascos",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
